@@ -24,7 +24,11 @@ const Details = ({ match: { params }, data, addItem }) => {
 
   return (
     <div className={styles.details}>
-      <img className={styles.details__img} src={item.img} alt={item.title} />
+      <img
+        className={styles.details__img}
+        src={process.env.PUBLIC_URL + item.img}
+        alt={item.title}
+      />
       <div className={styles.details__info}>
         <div className={styles.details__desc}>
           <h1 className={styles.details__model}>{item.title}</h1>

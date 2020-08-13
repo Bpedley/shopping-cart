@@ -6,7 +6,7 @@ const StoreItem = ({ data, addItem }) => {
   return (
     <div className={styles.item}>
       <Link className={styles.item__link} to={`/products/${data.id}`}>
-        <img src={data.img} alt={data.title} />
+        <img src={process.env.PUBLIC_URL + data.img} alt={data.title} />
         {data.title}
       </Link>
       <p className={styles.item__price}>${data.price}</p>

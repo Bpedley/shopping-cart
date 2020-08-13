@@ -6,7 +6,11 @@ import styles from "./CartItem.module.scss";
 const CartItem = ({ data, increment, decrement, removeItem }) => {
   return (
     <div className={styles.cartItem}>
-      <img className={styles.cartItem__img} src={data.img} alt={data.title} />
+      <img
+        className={styles.cartItem__img}
+        src={process.env.PUBLIC_URL + data.img}
+        alt={data.title}
+      />
       <div className={styles.cartItem__info}>
         <Link className={styles.cartItem__model} to={`/products/${data.id}`}>
           {data.title}
