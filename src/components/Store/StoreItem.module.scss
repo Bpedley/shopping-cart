@@ -1,0 +1,54 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.item__link {
+  font-size: 1.3rem;
+  color: #000;
+  transition: color 0.2s;
+  &:hover {
+    color: rgb(214, 147, 147);
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    margin-top: 35px;
+    padding-bottom: 10px;
+  }
+}
+
+.item__price {
+  margin-bottom: 38px;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.item__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  font-weight: bold;
+  background-color: #edf2f7;
+  border: none;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: #c9dff7;
+  }
+  &:disabled {
+    cursor: initial;
+  }
+}

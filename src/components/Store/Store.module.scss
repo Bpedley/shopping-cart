@@ -1,0 +1,32 @@
+.store {
+  margin: 85px 25px 100px;
+  text-align: center;
+}
+
+.store__heading {
+  margin-bottom: 25px;
+}
+
+.store__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.store__input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.store__quantity {
+  display: flex;
+  align-items: center;
+}
+
+.store__grid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 45px;
+}

@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.7rem;
+    a {
+      color: #000;
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover {
+        color: rgb(214, 147, 147);
+        text-decoration: underline;
+      }
+    }
+    li:first-child {
+      margin-right: 30px;
+    }
+  }
+}

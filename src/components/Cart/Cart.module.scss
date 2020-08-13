@@ -1,0 +1,15 @@
+.cart {
+  margin: 85px 25px;
+  text-align: center;
+}
+
+.cart__empty {
+  margin: 25px 0 0;
+}
+
+.cart__total {
+  display: flex;
+  justify-content: right;
+  font-size: 1.3rem;
+  border-top: 2px solid #000;
+}
