@@ -32,9 +32,10 @@
   font-size: 1rem;
   padding: 10px 0;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
   background-color: #c9dff7;
   transition: background-color 0.2s;
+  cursor: pointer;
   &:hover {
     background-color: #add3fc;
   }

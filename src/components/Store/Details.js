@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { addItem } from "../../actions";
-import styles from "./ItemDetails.module.scss";
+import styles from "./Details.module.scss";
 
 const Details = ({ match: { params }, data, addItem }) => {
   const [item, setItem] = useState([]);
