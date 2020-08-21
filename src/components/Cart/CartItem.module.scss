@@ -13,9 +13,17 @@
 
 .cartItem__quantity {
   margin-left: auto;
-  cursor: pointer;
-  i:hover {
-    color: #d69393;
+  i {
+    font-size: 1.25rem;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      color: #d69393;
+    }
   }
 }
 
@@ -27,6 +35,7 @@
 .cartItem__delete {
   font-size: 1rem;
   border: none;
+  border-radius: 5px;
   padding: 5px 15px;
   cursor: pointer;
   background-color: #edf2f7;
@@ -54,4 +63,9 @@
 .cartItem__company {
   font-size: 0.7rem;
   line-height: 2;
+}
+
+.cartItem__number {
+  padding: 12px 0;
+  font-size: 1.25rem;
 }

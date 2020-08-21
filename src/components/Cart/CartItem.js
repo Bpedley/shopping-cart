@@ -25,9 +25,13 @@ const CartItem = ({ data, increment, decrement, removeItem }) => {
         </button>
       </div>
       <div className={styles.cartItem__quantity}>
-        <i onClick={() => increment(data.id)} className="fa fa-angle-up"></i>
-        <p>{data.count}</p>
-        <i onClick={() => decrement(data.id)} className="fa fa-angle-down"></i>
+        <button onClick={() => increment(data.id)}>
+          <i className="fa fa-angle-up"></i>
+        </button>
+        <p className={styles.cartItem__number}>{data.count}</p>
+        <button onClick={() => decrement(data.id)}>
+          <i className="fa fa-angle-down"></i>
+        </button>
       </div>
     </div>
   );
